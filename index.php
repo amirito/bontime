@@ -1,9 +1,10 @@
+<?php require 'core/core.php'; ?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rayweb</title>
+    <title>Bon Time بن تایم</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -24,8 +25,8 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav navbar-bordered">
-            <li class="active"><a href="#"><i class="fa fa-phone"></i> (021) 42091000 <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">نت برگ چگونه کار می کند؟</a></li>
+            <li class="active"><a href="#"><i class="fa fa-phone"></i> (021) 88759592 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">بن تایم چگونه کار می کند؟</a></li>
             <li class="">
                 <a href="#" role="button" aria-expanded="false">ارتباط با ما </a>
             </li>
@@ -69,78 +70,52 @@
 </div>
 <section class="main container">
     <div class="col-md-10 big-ad">
-    <div class="col-md-4">
-        <p class="main-name">
-            <span>کافه رستوران وان</span>
-            <a class="fa fa-heart like"></a>
-        </p>
-        <div class="main-title">
-            <h2>
-                <a href="#">محیط دنج و خاطره انگیز کافه رستوران وان</a>
-            </h2>
-        </div>
-        <div class="main-price">
-            <div class="price">
-                <p>پرداخت شما:</p>
-                <p><span class="green cash">36,000</span> تومان</p>
+        <div class="col-md-4">
+            <p class="main-name">
+                <span>کافه رستوران وان</span>
+                <a class="fa fa-heart like"></a>
+            </p>
+            <div class="main-title">
+                <h2>
+                    <a href="#">محیط دنج و خاطره انگیز کافه رستوران وان</a>
+                </h2>
             </div>
-            <div class="main-off">
-                <p class="percent">60%</p>
-                <p>تخفیف</p>
+            <div class="main-price">
+                <div class="price">
+                    <p>پرداخت شما:</p>
+                    <p><span class="green cash">36,000</span> تومان</p>
+                </div>
+                <div class="main-off">
+                    <p class="percent">60%</p>
+                    <p>تخفیف</p>
+                </div>
             </div>
+            <a class="btn btn-lg btn-block btn-success">مشاهده و خرید</a>
         </div>
-        <a class="btn btn-lg btn-block btn-success">مشاهده و خرید</a>
+        <div class="col-md-8 main-image">
+            <div></div>
+            <div><img src="images/152845.8882c857425c5130ee2659073c390d9a.jpg"></div>
+            <div></div>
+        </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="col-md-8 main-image">
-        <div></div>
-        <div><img src="images/152845.8882c857425c5130ee2659073c390d9a.jpg"></div>
-        <div></div>
-    </div>
-    <div class="clearfix"></div>
-</div>
 
 </section>
 
-<section class="main">
-    <div class="container product-detail">
-        <div class="col-md-4">
-            <p class="property-head"><i class="fa fa-circle"></i> ویژگی ها</p>
-            <p>- امکان انتخاب و سفارش یکی از چاپ عکس های شرکت سیمرغ نیلی با خرید نت برگ هر پکیج
-            </p>
-            <p>- چاپ در ابعاد 60*40 سانتی متر روی چرم</p>
-            <p> - چاپ در ابعاد 30*30 سانتی متر روی چرم یا پازل 4 تکه</p>
-            <p> - چاپ در ابعاد 65*35 سانتی متر روی چرم</p>
-            <p>- امکان انتخاب چاپ عکس در سایز های مختلف با پرداخت هزینه جداگانه در محل</p>
-            <p>- امکان ارسال برای سایر شهرها با هزینه جداگانه</p>
-            <p>- اولویت تحویل بر اساس اولویت در خرید می باشد</p>
-        </div>
+<?php
 
-        <div class="col-md-4">
-            <p class="property-head"><i class="fa fa-circle"></i> ویژگی ها</p>
-            <p>- امکان انتخاب و سفارش یکی از چاپ عکس های شرکت سیمرغ نیلی با خرید نت برگ هر پکیج
-            </p>
-            <p>- چاپ در ابعاد 60*40 سانتی متر روی چرم</p>
-            <p> - چاپ در ابعاد 30*30 سانتی متر روی چرم یا پازل 4 تکه</p>
-            <p> - چاپ در ابعاد 65*35 سانتی متر روی چرم</p>
-            <p>- امکان انتخاب چاپ عکس در سایز های مختلف با پرداخت هزینه جداگانه در محل</p>
-            <p>- امکان ارسال برای سایر شهرها با هزینه جداگانه</p>
-            <p>- اولویت تحویل بر اساس اولویت در خرید می باشد</p>
-        </div>
+if(isset($_GET['page'])){
+	  if(is_file('include/'.$_GET['page'].'.php')){
+		  include 'include/'.$_GET['page'].'.php';
+		  }else{
+		  die('صفحه مورد نظر وجود ندارد');
+		  }
+	  }else{
+		  include 'include/home.php';
+}
 
-        <div class="col-md-4">
-            <p class="property-head"><i class="fa fa-circle"></i> ویژگی ها</p>
-            <p>- امکان انتخاب و سفارش یکی از چاپ عکس های شرکت سیمرغ نیلی با خرید نت برگ هر پکیج
-            </p>
-            <p>- چاپ در ابعاد 60*40 سانتی متر روی چرم</p>
-            <p> - چاپ در ابعاد 30*30 سانتی متر روی چرم یا پازل 4 تکه</p>
-            <p> - چاپ در ابعاد 65*35 سانتی متر روی چرم</p>
-            <p>- امکان انتخاب چاپ عکس در سایز های مختلف با پرداخت هزینه جداگانه در محل</p>
-            <p>- امکان ارسال برای سایر شهرها با هزینه جداگانه</p>
-            <p>- اولویت تحویل بر اساس اولویت در خرید می باشد</p>
-        </div>
-    </div>
+?>
 
-</section>
 <hr>
 <div class="clearfix"></div>
 <footer>
@@ -201,7 +176,7 @@
         <div class="container">
             <div class="col-md-4 text-left">
                 <p class="phone-detail">
-                    <i class="fa fa-phone-square"></i><span>(021) 42091000</span>
+                    <i class="fa fa-phone-square"></i><span>(021) 88759592</span>
                 </p>
                 <div class="clearfix"></div>
                 <ul class="list-inline social">
@@ -232,8 +207,8 @@
                 <a href="#"><img src="images/logo-footer.png"></a>
             </div>
             <div class="col-md-4">
-                <p>کليه حقوق اين وب سایت متعلق به شرکت کسب و کار نوین ایرانیان است.</p>
-                <a href="#">قوانین و مقرارت نت برگ</a> -
+                <p>کليه حقوق اين وب سایت متعلق به شرکت یگانه نوآوران پویا است.</p>
+                <a href="#">قوانین و مقرارت بن تایم</a> -
                 <a href="#">ضوابط حفظ حریم خصوصی</a>
             </div>
         </div>
