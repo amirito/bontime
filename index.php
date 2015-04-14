@@ -167,7 +167,9 @@ if(isset($_GET['page'])){
                     </form>
                 </div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2">
+            	<a href="#"><img src="images/logo-footer.png" class="footer-right-logo"></a>
+            </div>
             <div class="clearfix"></div>
 
         </div>
