@@ -168,7 +168,7 @@ a:hover{
     border-radius: 4px;
 }
 .main-image{
-    height: 390px;
+    height: 386px;
     padding-right: 0;
 
 }
@@ -550,3 +550,38 @@ a:hover{
 .property-head i{
     color: #f06305;
 }
+.category{
+	border-radius: 4px 0px 0px 4px;
+	background-color:#FFFFFF;
+	text-align:right;
+	list-style-type:none;
+	padding:0 0px 0 0 ;
+	border-right: 3px #4d4d4d solid;
+	font-size:12px;
+	}
+.category li{
+	line-height:47.2px;
+	border-bottom:solid 1px #ededed;
+	border-right:2px #ffffff solid;
+	}
+.right-item{
+	font-size:18px !important;
+	color:#f06305;
+	margin-left:4px;
+	margin-right:4px;
+	}
+.category li a{
+	
+	display:block;
+	
+	}
+.category li a:hover {
+	background-color:#f06305;
+	color:#FFFFFF;
+	}
+.category li a:hover .right-item{
+	color:#ffffff;
+	}
+.category li.active-li{
+	border-right: 2px #f06305 solid;
+	}

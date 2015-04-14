@@ -35,7 +35,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="pull-right"><a href="#"> شهر  تهران<i class=" map-icon"></i></a></li>
                 <li class="dropdown pull-right">
-                    <a href="#">خانه   <span class="bread-crumb"></span></a>
+                    <a href="#">خانه &nbsp;<span class="bread-crumb"></span></a>
 
                 </li>
             </ul>
@@ -93,13 +93,22 @@
             <a class="btn btn-lg btn-block btn-success">مشاهده و خرید</a>
         </div>
         <div class="col-md-8 main-image">
-            <div></div>
-            <div><img src="images/152845.8882c857425c5130ee2659073c390d9a.jpg"></div>
-            <div></div>
+            <img class="img-responsive" src="images/152845.8882c857425c5130ee2659073c390d9a.jpg">
         </div>
         <div class="clearfix"></div>
     </div>
-
+	<div class="col-md-2">
+    	<ul class="category">
+        	<li class="active-li"><a href="#/tehran"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
+			<li><a href="#/tehran/cat:1"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
+			<li><a href="#/tehran/cat:8"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
+			<li><a href="#/tehran/cat:6"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
+			<li><a href="#/tehran/cat:15"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
+			<li><a href="#/tehran/cat:9"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
+			<li><a href="#/tehran/cat:7"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
+			<li><a href="#/tehran/cat:5"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
+        </ul>
+    </div>
 </section>
 
 <?php
