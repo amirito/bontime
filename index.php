@@ -11,6 +11,19 @@ if(isset($_GET['page'])){
 		case 'contactus' : 
 			$top = 'contactus';
 			$bottom = 'none';
+			
+		break;
+		
+		case 'user_login' : 
+			$top = 'user_login';
+			$bottom = 'none';
+			
+		break;
+		
+		case 'user_signup' : 
+			$top = 'user_signup';
+			$bottom = 'none';
+			
 		break;
 		
 		default :
@@ -58,7 +71,7 @@ if(isset($_GET['page'])){
         </ul>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="pull-right"><a href="#"> شهر  تهران<i class=" map-icon"></i></a></li>
+                <li class="pull-right"><a href="index.php"> شهر  تهران<i class=" map-icon"></i></a></li>
                 <li class="dropdown pull-right">
                     <a href="index.php">خانه &nbsp;<span class="bread-crumb"></span></a>
 
@@ -72,12 +85,12 @@ if(isset($_GET['page'])){
     <div class="container">
         <div class="col-md-4">
             <div class="user">
-                <a class="btn-signin">
+                <a class="btn-signin" href="?page=user_login">
                     <span>ورود کاربر</span>
                     <i></i>
                 </a>
                 <p class="user-signup text-right">
-                    <a href="#">ثبت نام کنید</a>
+                    <a href="?page=user_signup">ثبت نام کنید</a>
                     <a href="#">فراموشی کلمه عبور</a>
                 </p>
 
@@ -88,7 +101,7 @@ if(isset($_GET['page'])){
 
         </div>
         <div class="col-md-4 text-right logo">
-            <a href="#"><img src="images/logo.png"></a>
+            <a href="index.php"><img src="images/logo.png"></a>
         </div>
     </div>
 
@@ -106,13 +119,13 @@ if(isset($top) && is_file('include/'.$top.'.php')){
 	<div class="col-md-2">
     	<ul class="category">
         	<li class="active-li"><a href="#/tehran"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
-			<li><a href="#/tehran/cat:1"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
-			<li><a href="#/tehran/cat:8"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
-			<li><a href="#/tehran/cat:6"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
-			<li><a href="#/tehran/cat:15"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
-			<li><a href="#/tehran/cat:9"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
-			<li><a href="#/tehran/cat:7"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
-			<li><a href="#/tehran/cat:5"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
+			<li><a href="#"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
+			<li><a href="#"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
+			<li><a href="#"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
+			<li><a href="#"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
+			<li><a href="#"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
+			<li><a href="#"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
+			<li><a href="#"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
         </ul>
     </div>
 </section>

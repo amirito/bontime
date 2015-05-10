@@ -213,7 +213,7 @@ a:hover{
     text-align: right;
     direction: rtl;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .price{
     background-color: #f0f0f0;
@@ -249,7 +249,13 @@ a:hover{
 .percent{
     font-size: 30px;
 }
-
+.main-ceil{
+	text-align: right;
+    direction: rtl;
+    position: relative;
+	font-size:14px;
+	margin-bottom:30px;
+}	
 .top-footer{
     border-top: solid 3px #f06305;
     background-color: #262626;
