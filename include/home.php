@@ -16,7 +16,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -43,7 +43,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -70,7 +70,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -97,7 +97,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -124,7 +124,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -151,7 +151,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -187,7 +187,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -213,7 +213,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -239,7 +239,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -274,7 +274,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">
@@ -300,7 +300,7 @@
                         <h2>8,800</h2>
                         <p>ارزش واقعی: 40,000</p>
                         <p>تخفیف: 78%</p>
-                        <a href="#" class="info">مشاهده بن تایم</a>
+                        <a href="index.php?page=product" class="info">مشاهده بن تایم</a>
                     </div>
                     <p class="caption">چاپ عکس روی چرم، پازل از سیمرغ نیلی</p>
                     <div class="detail">

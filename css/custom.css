@@ -585,3 +585,22 @@ a:hover{
 .category li.active-li{
 	border-right: 2px #f06305 solid;
 	}
+.address{
+	background-color : #F0EDE5;
+	padding: 5px;
+	}
+.address div.title{
+	color:#F06305;
+	border-bottom:solid 1px #E3DDCE;
+	margin:5px;
+	padding:10px;
+	}
+.address div.address-text{
+	border-bottom:solid 1px #E3DDCE;
+	margin:5px;
+	padding:10px;
+	}
+.address div.phone{
+	margin:5px;
+	padding:10px;
+	}

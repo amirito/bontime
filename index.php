@@ -1,4 +1,29 @@
-<?php require 'core/core.php'; ?>
+<?php require 'core/core.php'; 
+
+if(isset($_GET['page'])){
+	switch($_GET['page']){
+		
+		case 'product' : 
+			$top = 'big-ad';
+			$bottom = 'product';
+		break;
+		
+		case 'contactus' : 
+			$top = 'contactus';
+			$bottom = 'none';
+		break;
+		
+		default :
+		  	$top = 'big-ad';
+			$bottom = 'home';
+			
+		}
+}else{
+	$top = 'big-ad';
+	$bottom = 'home';
+	}
+	
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -28,14 +53,14 @@
             <li class="active"><a href="#"><i class="fa fa-phone"></i> (021) 88759592 <span class="sr-only">(current)</span></a></li>
             <li><a href="#">بن تایم چگونه کار می کند؟</a></li>
             <li class="">
-                <a href="#" role="button" aria-expanded="false">ارتباط با ما </a>
+                <a href="index.php?page=contactus" role="button" aria-expanded="false">ارتباط با ما </a>
             </li>
         </ul>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="pull-right"><a href="#"> شهر  تهران<i class=" map-icon"></i></a></li>
                 <li class="dropdown pull-right">
-                    <a href="#">خانه &nbsp;<span class="bread-crumb"></span></a>
+                    <a href="index.php">خانه &nbsp;<span class="bread-crumb"></span></a>
 
                 </li>
             </ul>
@@ -70,32 +95,13 @@
 </div>
 <section class="main container">
     <div class="col-md-10 big-ad">
-        <div class="col-md-4">
-            <p class="main-name">
-                <span>کافه رستوران وان</span>
-                <a class="fa fa-heart like"></a>
-            </p>
-            <div class="main-title">
-                <h2>
-                    <a href="#">محیط دنج و خاطره انگیز کافه رستوران وان</a>
-                </h2>
-            </div>
-            <div class="main-price">
-                <div class="price">
-                    <p>پرداخت شما:</p>
-                    <p><span class="green cash">36,000</span> تومان</p>
-                </div>
-                <div class="main-off">
-                    <p class="percent">60%</p>
-                    <p>تخفیف</p>
-                </div>
-            </div>
-            <a class="btn btn-lg btn-block btn-success">مشاهده و خرید</a>
-        </div>
-        <div class="col-md-8 main-image">
-            <img class="img-responsive" src="images/152845.8882c857425c5130ee2659073c390d9a.jpg">
-        </div>
-        <div class="clearfix"></div>
+<?php
+if(isset($top) && is_file('include/'.$top.'.php')){
+	  include 'include/'.$top.'.php';
+	  }else{
+	  die('صفحه مورد نظر وجود ندارد');
+}
+?>
     </div>
 	<div class="col-md-2">
     	<ul class="category">
@@ -112,17 +118,11 @@
 </section>
 
 <?php
-
-if(isset($_GET['page'])){
-	  if(is_file('include/'.$_GET['page'].'.php')){
-		  include 'include/'.$_GET['page'].'.php';
-		  }else{
-		  die('صفحه مورد نظر وجود ندارد');
-		  }
+if(isset($bottom) && is_file('include/'.$bottom.'.php')){
+	  include 'include/'.$bottom.'.php';
 	  }else{
-		  include 'include/home.php';
+	  die('صفحه مورد نظر وجود ندارد');
 }
-
 ?>
 
 <hr>
@@ -214,8 +214,8 @@ if(isset($_GET['page'])){
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 text-center logo-footer">
-                <a href="#"><img src="images/logo-footer.png"></a>
+            <div class="col-md-4 text-center">
+                <a href="http://rayweb.ir">رای وب</a>
             </div>
             <div class="col-md-4">
                 <p>کليه حقوق اين وب سایت متعلق به شرکت یگانه نوآوران پویا است.</p>
