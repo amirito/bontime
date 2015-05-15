@@ -8,7 +8,7 @@
         <address class="address">
                   <div class="title">رستوران ایتالیایی تیامو</div>
                   <div class="address-text">
-                  <span class="fa fa-location-arrow" style="color:#f06305;"></span>
+                  <span class="fa fa-location-arrow" style="color:#942564;"></span>
                    شهرک غرب، بلوار دادمان، خیابان درختی، خیابان حافظی، پلاک 84 
                   </div>
                   <div class="phone"><span class="fa fa-phone" style="color:green;"></span>

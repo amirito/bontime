@@ -1,4 +1,5 @@
-<?php require 'core/core.php'; 
+<?php 
+require 'core/core.php'; 
 
 if(isset($_GET['page'])){
 	switch($_GET['page']){
@@ -22,6 +23,12 @@ if(isset($_GET['page'])){
 		
 		case 'user_signup' : 
 			$top = 'user_signup';
+			$bottom = 'none';
+			
+		break;
+		
+		case 'generate' : 
+			$top = 'generate';
 			$bottom = 'none';
 			
 		break;
@@ -83,8 +90,15 @@ if(isset($_GET['page'])){
 
 <div class="jumbotron">
     <div class="container">
-        <div class="col-md-4">
-            <div class="user">
+    <div class="col-md-4 text-left logo">
+            <a href="index.php"><img src="images/logo.png"></a>
+        </div>
+        
+        <div class="col-md-5">
+
+        </div>
+        <div class="col-md-3">
+            <div class="user text-right">
                 <a class="btn-signin" href="?page=user_login">
                     <span>ورود کاربر</span>
                     <i></i>
@@ -96,12 +110,6 @@ if(isset($_GET['page'])){
 
             </div>
 
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4 text-right logo">
-            <a href="index.php"><img src="images/logo.png"></a>
         </div>
     </div>
 
