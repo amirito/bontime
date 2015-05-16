@@ -33,6 +33,12 @@ if(isset($_GET['page'])){
 			
 		break;
 		
+		case 'mypage' : 
+			$top = 'mypage';
+			$bottom = 'none';
+			
+		break;
+		
 		default :
 		  	$top = 'big-ad';
 			$bottom = 'home';

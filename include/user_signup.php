@@ -3,13 +3,6 @@
 		header("Location: ?page=generate");
 	}
 	
-/*$provinces = '';
-$provinces_query = " SELECT * FROM `province`" ;
-$provinces_result = mysqli_query($connection,$provinces_query);
-while($provinces_row = mysqli_fetch_assoc($provinces_result)){
-		$provinces .="<option value='$provinces_row[id]'>$provinces_row[name]</a>";
-	}*/
-	
 $error = '';
 if(isset($_POST['submit'])){
 
