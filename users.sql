@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2015 at 09:01 PM
+-- Generation Time: May 17, 2015 at 09:06 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,55 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `bontime`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `province`
---
-
-CREATE TABLE IF NOT EXISTS `province` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(64) CHARACTER SET utf8 NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=32 ;
-
---
--- Dumping data for table `province`
---
-
-INSERT INTO `province` (`id`, `name`) VALUES
-(1, 'آذربايجان شرقي'),
-(2, 'آذربايجان غربي'),
-(3, 'اردبيل'),
-(4, 'اصفهان'),
-(5, 'البرز'),
-(6, 'ايلام'),
-(7, 'بوشهر'),
-(8, 'تهران'),
-(9, 'چهارمحال و بختياري'),
-(10, 'خراسان جنوبي'),
-(11, 'خراسان رضوي'),
-(12, 'خراسان شمالي'),
-(13, 'خوزستان'),
-(14, 'زنجان'),
-(15, 'سمنان'),
-(16, 'سيستان و بلوچستان'),
-(17, 'فارس'),
-(18, 'قزوين'),
-(19, 'قم'),
-(20, 'كردستان'),
-(21, 'كرمان'),
-(22, 'كرمانشاه'),
-(23, 'كهگيلويه و بويراحمد'),
-(24, 'گلستان'),
-(25, 'گيلان'),
-(26, 'لرستان'),
-(27, 'مازندران'),
-(28, 'مركزي'),
-(29, 'هرمزگان'),
-(30, 'همدان'),
-(31, 'يزد');
 
 -- --------------------------------------------------------
 
@@ -1101,28 +1052,6 @@ INSERT INTO `users` (`id`, `activation_code`, `first_name`, `last_name`, `melli_
 (999, '58779296', '', '', '', '', '', '', '', '', 0, '', '', '', 0),
 (1000, '65917523', '', '', '', '', '', '', '', '', 0, '', '', '', 0),
 (1001, '62340378', '', '', '', '', '', '', '', '', 0, '', '', '', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `vizhegi`
---
-
-CREATE TABLE IF NOT EXISTS `vizhegi` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` text NOT NULL,
-  `type` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `vizhegi`
---
-
-INSERT INTO `vizhegi` (`id`, `name`, `type`, `user_id`) VALUES
-(1, 'تست', 1, 1),
-(2, 'تست2', 2, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

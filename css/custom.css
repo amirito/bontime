@@ -168,9 +168,11 @@ a:hover{
     border-radius: 4px;
 }
 .main-image{
-    height: 386px;
     padding-right: 0;
-
+	background-image:url(../images/bg.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+    background-size:150px;
 }
 .main-name{
     font-size: 11px;
@@ -610,3 +612,10 @@ a:hover{
 	margin:5px;
 	padding:10px;
 	}
+#cssmenu > ul > li {
+    float: right;
+}
+#cssmenu > ul > li a {
+    color: #337AB7; 
+	font-family:yekan,YekanNumbers,verdana !important;
+}

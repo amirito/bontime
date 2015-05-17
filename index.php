@@ -58,6 +58,7 @@ if(isset($_GET['page'])){
     <title>Bon Time بن تایم</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menumaker.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
@@ -120,8 +121,23 @@ if(isset($_GET['page'])){
     </div>
 
 </div>
+
+<div id='cssmenu'>
+<ul>
+    <li class="active"><a href="index.php"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
+    <li><a href="#"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
+    <li><a href="#"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
+    <li><a href="#"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
+    <li><a href="#"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
+    <li><a href="#"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
+    <li><a href="#"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
+    <li><a href="#"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
+    <li></li>
+</ul>
+</div>
+
 <section class="main container">
-    <div class="col-md-10 big-ad">
+    <div class="col-md-12 big-ad">
 <?php
 if(isset($top) && is_file('include/'.$top.'.php')){
 	  include 'include/'.$top.'.php';
@@ -129,8 +145,8 @@ if(isset($top) && is_file('include/'.$top.'.php')){
 	  die('صفحه مورد نظر وجود ندارد');
 }
 ?>
-    </div>
-	<div class="col-md-2">
+</div>
+	<!--<div class="col-md-2">
     	<ul class="category">
         	<li class="active-li"><a href="#/tehran"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
 			<li><a href="#"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
@@ -141,7 +157,7 @@ if(isset($top) && is_file('include/'.$top.'.php')){
 			<li><a href="#"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
 			<li><a href="#"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
         </ul>
-    </div>
+    </div>-->
 </section>
 
 <?php
