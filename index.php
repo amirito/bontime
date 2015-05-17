@@ -187,7 +187,6 @@ if(isset($bottom) && is_file('include/'.$bottom.'.php')){
                     <ul class="footer-list list-unstyled">
                         <li><a href="#">آر اس اس</a></li>
                         <li><a href="#">سوالات متداول</a></li>
-                        <li><a href="#">راهنمای پرداخت آنلاین</a></li>
                         <li><a href="#">اطمینان از دریافت ایمیل</a></li>
                     </ul>
                 </div>
