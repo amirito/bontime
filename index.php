@@ -117,7 +117,7 @@ if(isset($_GET['page'])){
         
         <div class="col-md-5 text-right">
 		کد فعال سازی خود را در این قسمت وارد نمایید <br>
-		<form class="form-inline" class="pull-right">
+		<form class="form-inline" class="pull-right" action="index.php?page=generate" method="post">
           <div class="form-group">
             <label class="sr-only" for="activation_code">کد فعال سازی</label>
             <div class="input-group">

@@ -1,6 +1,6 @@
 <?php	
 $error = '';
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']) || isset($_POST['activation_code'])){
 
     $activation_code = $_POST['activation_code'];
 	
