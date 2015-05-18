@@ -39,6 +39,12 @@ if(isset($_GET['page'])){
 			
 		break;
 		
+		case 'category' : 
+			$top = 'none';
+			$bottom = 'category';
+			
+		break;
+		
 		default :
 		  	$top = 'big-ad';
 			$bottom = 'home';
@@ -107,7 +113,7 @@ if(isset($_GET['page'])){
         <div class="col-md-3">
             <div class="user text-right">
                 <a class="btn-signin" href="?page=user_login">
-                    <span>ورود کاربر</span>
+                    <span>ورود صاحب شغل</span>
                     <i></i>
                 </a>
                 <p class="user-signup text-right">
@@ -125,13 +131,13 @@ if(isset($_GET['page'])){
 <div id='cssmenu'>
 <ul>
     <li class="active"><a href="index.php"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
-    <li><a href="#"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
-    <li><a href="#"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
-    <li><a href="#"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
-    <li><a href="#"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
-    <li><a href="#"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
-    <li><a href="#"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
-    <li><a href="#"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
+    <li><a href="?page=category&type=all"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
+    <li><a href="?page=category&type=رستوران و کافی‌شاپ"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
+    <li><a href="?page=category&type=تفریحی و ورزشی"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
+    <li><a href="?page=category&type=پزشکی و سلامت"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
+    <li><a href="?page=category&type=فرهنگی و هنری"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
+    <li><a href="?page=category&type=زیبایی و آرایشی"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
+    <li><a href="?page=category&type=کالا"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
     <li></li>
 </ul>
 </div>
@@ -177,7 +183,7 @@ if(isset($bottom) && is_file('include/'.$bottom.'.php')){
                 <div class="col-md-3">
                     <p class="footer-title">سایر خدمات</p>
                     <ul class="footer-list list-unstyled">
-                        <li><a href="#">تماس با واحد پشتیبانی</a></li>
+                        <li><a href="http://rayweb.ir/contact/">تماس با واحد پشتیبانی</a></li>
                         <li></li>
                         <li></li>
                     </ul>
@@ -193,18 +199,18 @@ if(isset($bottom) && is_file('include/'.$bottom.'.php')){
                 <div class="col-md-3">
                     <p class="footer-title">ارتباط بیشتر</p>
                     <ul class="footer-list list-unstyled">
-                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="?page=contactus">تماس با ما</a></li>
                         <li><a href="#">دریافت نمایندگی</a></li>
-                        <li><a href="#">بن تایم برای کسب و کار شما</a></li>
+                        <li><a href="#">مزایای استفاده از بن تایم حمایتی</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="footer-title">بن تایم</p>
+                    <p class="footer-title">حساب کاربری</p>
                     <ul class="footer-list list-unstyled">
-                        <li><a href="#">بن بلاگ</a></li>
-                        <li><a href="#">درباره بن تایم</a></li>
+                        <li><a href="?page=user_signup">ثبت نام کاربر</a></li>
+                        <li><a href="?page=user_login">ورود صاحب شغل</a></li>
                         <li><a href="#">بن تایم در اخبار</a></li>
-                        <li><a href="#">بن تایم چگونه کار می ند</a></li>
+                        <li><a href="#">بن تایم چگونه کار می کند</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
