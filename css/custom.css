@@ -79,6 +79,7 @@ a:hover{
     background-color: #ffffff;
     border-bottom: solid 2px #942564;
     padding-bottom: 10px;
+	padding-top: 10px;
 }
 .user{
     position: absolute;
@@ -442,7 +443,6 @@ a:hover{
 }
 
 .view {
-    height: 300px;
     float: left;
     margin-bottom: 10px;
     border: 1px solid #ccc;

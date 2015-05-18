@@ -103,15 +103,36 @@ if(isset($_GET['page'])){
 
 <div class="jumbotron">
     <div class="container">
-    <div class="col-md-4 text-left logo">
+    <div class="row">
+    	<div class="col-md-12 pull-right text-right">
+		<h3 style="color:#942564;"> طرح بن کارت حمایتی <small>بهترین راه جهت افزایش مشتری در کوتاه مدت</small></h3>
+        </div>
+    </div>
+    <br>
+    <div class="clearfix"></div>
+    <div class="row">
+    <div class="col-md-3 text-left logo">
             <a href="index.php"><img src="images/logo.png"></a>
         </div>
         
-        <div class="col-md-5">
-
+        <div class="col-md-5 text-right">
+		کد فعال سازی خود را در این قسمت وارد نمایید <br>
+		<form class="form-inline" class="pull-right">
+          <div class="form-group">
+            <label class="sr-only" for="activation_code">کد فعال سازی</label>
+            <div class="input-group">
+              <div class="input-group-addon">#</div>
+              <input type="text" name="activation_code" maxlength="8" class="form-control" placeholder="کد فعال سازی">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">تایید</button>
+        </form>
         </div>
-        <div class="col-md-3">
+        
+        <div class="col-md-3 col-md-offset-1">
+        
             <div class="user text-right">
+            
                 <a class="btn-signin" href="?page=user_login">
                     <span>ورود صاحب شغل</span>
                     <i></i>
@@ -123,6 +144,7 @@ if(isset($_GET['page'])){
 
             </div>
 
+        	</div>
         </div>
     </div>
 
@@ -152,18 +174,6 @@ if(isset($top) && is_file('include/'.$top.'.php')){
 }
 ?>
 </div>
-	<!--<div class="col-md-2">
-    	<ul class="category">
-        	<li class="active-li"><a href="#/tehran"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
-			<li><a href="#"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
-			<li><a href="#"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
-			<li><a href="#"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
-			<li><a href="#"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
-			<li><a href="#"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
-			<li><a href="#"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
-			<li><a href="#"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
-        </ul>
-    </div>-->
 </section>
 
 <?php
