@@ -98,7 +98,7 @@ while($home_cat_row = mysqli_fetch_assoc($home_cat_result)){
 			<div class="clearfix"></div><br>
 			<div class="menu-title">
                 <span><i class="fa fa-video-camera"></i> فرهنگی و هنری</span>
-                <a href="?page=category&type=فرهنگی و هنری" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
+                <a href="?page=category&type=art" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
             </div>
             <hr class="menu-row">
             <div class="clearfix"></div>
@@ -109,7 +109,7 @@ while($home_cat_row = mysqli_fetch_assoc($home_cat_result)){
             <div class="clearfix"></div><br>
 			<div class="menu-title">
                 <span><i class="fa fa-plus-square"></i> زیبایی و آرایشی</span>
-                <a href="?page=category&type=زیبایی و آرایشی" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
+                <a href="?page=category&type=beauty" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
             </div>
             <hr class="menu-row">
             <div class="clearfix"></div>
@@ -119,7 +119,7 @@ while($home_cat_row = mysqli_fetch_assoc($home_cat_result)){
             <div class="clearfix"></div><br>
 			<div class="menu-title">
                 <span><i class="fa fa-shopping-cart"></i> کالا</span>
-                <a href="?page=category&type=کالا" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
+                <a href="?page=category&type=product" class="btn btn-success">مشاهده همه بن تایم های این دسته</a>
             </div>
             <hr class="menu-row">
             <div class="clearfix"></div>

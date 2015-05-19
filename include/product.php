@@ -39,3 +39,4 @@ if(isset($_GET['page']) && $_GET['page']=='product' && isset($_GET['id'])){
             <p>- اولویت تحویل بر اساس اولویت در خرید می باشد</p>
         </div>
     </div>
+</section>
