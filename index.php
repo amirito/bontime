@@ -154,12 +154,12 @@ if(isset($_GET['page'])){
 <ul>
     <li class="active"><a href="index.php"> <span>خانه</span> <span class="fa fa-home right-item"></span></a></li>
     <li><a href="?page=category&type=all"> <span>تمامی پیشنهادات</span> <span class="fa fa-th right-item"></span></a></li>
-    <li><a href="?page=category&type=رستوران و کافی‌شاپ"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
-    <li><a href="?page=category&type=تفریحی و ورزشی"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
-    <li><a href="?page=category&type=پزشکی و سلامت"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
-    <li><a href="?page=category&type=فرهنگی و هنری"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
-    <li><a href="?page=category&type=زیبایی و آرایشی"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
-    <li><a href="?page=category&type=کالا"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
+    <li><a href="?page=category&type=coffeshop"> <span>رستوران و کافی‌شاپ</span> <span class="fa fa-cutlery right-item"></span></a></li>
+    <li><a href="?page=category&type=sport"> <span>تفریحی و ورزشی</span> <span class="fa fa-futbol-o right-item"></span></a></li>
+    <li><a href="?page=category&type=health"> <span>پزشکی و سلامت</span> <span class="fa fa-plus-square right-item"></span></a></li>
+    <li><a href="?page=category&type=art"> <span>فرهنگی و هنری</span> <span class="fa fa-video-camera right-item"></span></a></li>
+    <li><a href="?page=category&type=beauty"> <span>زیبایی و آرایشی</span> <span class="fa fa-paint-brush right-item"></span></a></li>
+    <li><a href="?page=category&type=product"> <span>کالا</span> <span class="fa fa-shopping-cart right-item"></span></a></li>
     <li></li>
 </ul>
 </div>

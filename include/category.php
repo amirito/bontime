@@ -1,15 +1,32 @@
 <?php
+	
 		$category_type = 'all';
 		if(isset($_GET['type'])){
 		  $category_type = $_GET['type'];
 		  }
-	  if($category_type == 'all'){
-		 	 $cat_query = "SELECT * FROM `users` WHERE adv_date > '0' ORDER BY id DESC ; ";
-		  } else{ 
-	  		$cat_query = "SELECT * FROM `users` WHERE adv_date > '0' AND adv_category LIKE '%$category_type%' ORDER BY id DESC LIMIT 6 ; ";
-		  }
+		  
+	  switch($category_type){
+		  case 'coffeshop' : $category_type = 'رستوران و کافی‌شاپ';
+		  break;
+		  case 'sport' : $category_type = 'تفریحی و ورزشی';
+		  break;
+		  case 'health' : $category_type = 'پزشکی و سلامت';
+		  break;
+		  case 'art' : $category_type = 'فرهنگی و هنری';
+		  break;
+		  case 'beauty' : $category_type = 'زیبایی و آرایشی';
+		  break;
+		  case 'product' : $category_type = 'کالا';
+		  break;
+		  default : $category_type = '';
+		  break;
+	  }	  
+
+	  $cat_query = "SELECT * FROM `users` WHERE adv_date > '0' AND adv_category LIKE '%$category_type%' ORDER BY id DESC ; ";
 	  $cat_result = mysqli_query($connection , $cat_query);
-	  
+	  if($category_type == ''){
+		  $category_type = 'تمامی پیشنهادات';
+		  }
 ?>
 <section class="main">
     <div class="container">
