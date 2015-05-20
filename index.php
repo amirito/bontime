@@ -45,6 +45,12 @@ if(isset($_GET['page'])){
 			
 		break;
 		
+		case 'tracking_code' : 
+			$top = 'none';
+			$bottom = 'tracking_code';
+			
+		break;
+		
 		default :
 		  	$top = 'big-ad';
 			$bottom = 'home';

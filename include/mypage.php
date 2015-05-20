@@ -16,7 +16,9 @@
                 	<li><a href="?page=mypage&sub_page=step1" class="btn">مرحله اول : اطلاعات بن تایم</a></li>
                     <li><a href="?page=mypage&sub_page=step2" class="btn">مرحله دوم : ویژگی ها و شرایط استفاده</a></li>
                     <li><a href="?page=mypage&sub_page=step3" class="btn">مرحله سوم : اضافه کردن تصویر</a></li>
-                    <li><a href="?page=mypage&sub_page=reply" class="btn">پاسخ گویی به سوالات کاربران</a></li>
+                    <!--<li><a href="?page=mypage&sub_page=reply" class="btn">پاسخ گویی به سوالات کاربران</a></li>-->
+                    <li><a href="?page=mypage&sub_page=report" class="btn">گزارش سفارشات</a></li>
+                    <li><a href="?page=mypage&sub_page=email" class="btn">دانلود بانک ایمیل + نرم افزار ارسال</a></li>
                 </ul>
             </div>
 				<div class="col-md-6 pull-right">

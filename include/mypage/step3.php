@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 	
 	$image = $_FILES['image'];
 	
-	$step3_query = "UPDATE `users` SET  `adv_image`='$adv_image' WHERE id = '$id' ; ; ";
+	$step3_query = "UPDATE `users` SET  `adv_image`='$adv_image' WHERE id = '$id' ; ";
 	
 	$step3_result = mysqli_query($connection , $step3_query);
         if($step3_result){
