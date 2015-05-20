@@ -141,7 +141,7 @@ if(isset($_GET['page'])){
             <div class="user text-right">
             
                 <a class="btn-signin" href="?page=user_login">
-                    <span>ورود صاحب شغل</span>
+                    <span>ورود ویژه اعضا</span>
                     <i></i>
                 </a>
                 <p class="user-signup text-right">

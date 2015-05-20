@@ -1,6 +1,6 @@
 <?php
 	if(!isset($_SESSION['MM_ID'])){
-		header("Location: ?page=login");
+		header("Location: ?page=user_login");
 	}
 ?>
 <div class="col-xs-12">
@@ -19,6 +19,7 @@
                     <!--<li><a href="?page=mypage&sub_page=reply" class="btn">پاسخ گویی به سوالات کاربران</a></li>-->
                     <li><a href="?page=mypage&sub_page=report" class="btn">گزارش سفارشات</a></li>
                     <li><a href="?page=mypage&sub_page=email" class="btn">دانلود بانک ایمیل + نرم افزار ارسال</a></li>
+                    <li><a href="?page=mypage&sub_page=logout" class="btn">خروج</a></li>
                 </ul>
             </div>
 				<div class="col-md-6 pull-right">
