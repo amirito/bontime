@@ -51,6 +51,12 @@ if(isset($_GET['page'])){
 			
 		break;
 		
+		case 'mazaya' : 
+			$top = 'none';
+			$bottom = 'mazaya';
+			
+		break;
+		
 		default :
 		  	$top = 'big-ad';
 			$bottom = 'home';
@@ -91,7 +97,7 @@ if(isset($_GET['page'])){
         <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav navbar-bordered">
             <li class="active"><a href="#"><i class="fa fa-phone"></i> (021) 88759592 <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">بن تایم چگونه کار می کند؟</a></li>
+            <li><a href="?page=mazaya">مزایای طرح بن کارت حمایتی چیست؟</a></li>
             <li class="">
                 <a href="index.php?page=contactus" role="button" aria-expanded="false">ارتباط با ما </a>
             </li>
