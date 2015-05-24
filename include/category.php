@@ -53,6 +53,17 @@
 	  	$city_row = mysqli_fetch_assoc($city_result);
 		$cat_row['adv_city'] = $city_row['name'];
 		
+		##### bon kharidari shode kam shavad #####
+		$count = 0;
+		$sale_count_query = "SELECT * FROM `sale` WHERE adv_id = '$cat_row[id]' ; ";
+		$sale_count_result = mysqli_query($connection , $sale_count_query);
+		while($sale_count_row = mysqli_fetch_assoc($sale_count_result)){
+			$count += $sale_count_row['count'];
+			}
+		$cat_row['adv_count'] = $cat_row['adv_count'] - $count;
+		
+		
+		
             echo '<div class="col-md-4">
                 <div class="view view-fifth">
                     <img src="images/advertises/'.$cat_row['adv_image'].'" width="298" height="183" />
